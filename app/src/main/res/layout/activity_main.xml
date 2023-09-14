@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+    <ImageButton
+        android:id="@+id/aries_btn"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@color/white"
+        android:src="@raw/aries"
+        android:tooltipText="aries"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:id="@+id/taurus_btn"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@color/white"
+        android:src="@raw/taurus"
+        android:tooltipText="taurus"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:id="@+id/gemini_btn"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@color/white"
+        android:src="@raw/gemini"
+        android:tooltipText="gemini"
+        android:onClick="onClick"/>
+
+    <ImageButton
+        android:id="@+id/cancer_btn"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@color/white"
+        android:src="@raw/cancer"
+        android:tooltipText="cancer"
+        android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+    <ImageButton
+        android:id="@+id/leo_btn"
+        android:layout_weight="1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        android:backgroundTint="@color/white"
+        android:src="@raw/leo"
+        android:tooltipText="leo"
+        android:onClick="onClick"/>
+
+        <ImageButton
+            android:id="@+id/virgo_btn"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/white"
+            android:src="@raw/virgo"
+            android:tooltipText="virgo"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:id="@+id/libra_btn"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/white"
+            android:src="@raw/libra"
+            android:tooltipText="libra"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:id="@+id/scorpio_btn"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/white"
+            android:src="@raw/scorpio"
+            android:tooltipText="scorpio"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <ImageButton
+            android:id="@+id/sagittarius_btn"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/white"
+            android:src="@raw/sagittarius"
+            android:tooltipText="sagittarius"
+            android:onClick="onClick"/>
+        <ImageButton
+            android:id="@+id/capricorn_btn"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/white"
+            android:src="@raw/capricorn"
+            android:tooltipText="capricorn"
+            android:onClick="onClick"/>
+        <ImageButton
+            android:id="@+id/aquarius_btn"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/white"
+            android:src="@raw/aquarius"
+            android:tooltipText="aquarius"
+            android:onClick="onClick"/>
+
+        <ImageButton
+            android:id="@+id/pisces_btn"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:backgroundTint="@color/white"
+            android:src="@raw/pisces"
+            android:tooltipText="pisces"
+            android:onClick="onClick"/>
+
+
+    </LinearLayout>
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/sign_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp">
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20dp"/>
+</LinearLayout>
+
+</LinearLayout>
